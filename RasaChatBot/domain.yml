@@ -1,0 +1,64 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - thanks
+  - get_started
+  - pricing_and_cost
+  - enterprise_solutions
+  - api_access
+  - about_team
+  - about_project
+  - how_to_use_map
+  - health_correlation_details
+  - get_live_data_info
+  - what_is_aqi
+  - causes_of_pollution
+  - how_to_reduce_pollution
+  - health_effects
+  - ask_pollutant_info
+
+entities:
+  - pollutant
+
+responses:
+  utter_greet:
+  - text: "Hey! Welcome to AI Nose 3.0. How can I help?"
+  utter_goodbye:
+  - text: "Bye! Stay safe and breathe clean."
+  utter_thanks:
+  - text: "You're welcome!"
+  utter_get_started:
+  - text: "To get started, simply click the 'Get Started' or 'Join the Movement' button on our website to create an account and explore the dashboard."
+  utter_pricing_and_cost:
+  - text: "We offer a robust free plan for community members. For advanced features like bulk data export and API access, we have dedicated 'Enterprise & Research Solutions'."
+  utter_enterprise_solutions:
+  - text: "Our Enterprise Solutions offer research-grade forecasting, bulk data exports, custom API endpoints, and advanced analytics for smart city planning and academic research."
+  utter_api_access:
+  - text: "Yes, we offer custom API endpoints as part of our Enterprise & Research Solutions, allowing you to integrate our data into your own applications."
+  utter_about_team:
+  - text: "AI Nose - 3.0 was created by a passionate team consisting of Subhranil Biswas, Debojyoti Ghosh, Soumyadeep Mitra, and Kaustav Mandal."
+  utter_about_project:
+  - text: "AI Nose - 3.0 is an intelligent environmental platform designed to provide a deep and dynamic understanding of air quality. Instead of just showing static numbers, it integrates multiple layers of data in real-time, including information from low-cost sensors, live weather patterns, and satellite imagery. Using powerful AI models, the system analyzes these factors to not only report current pollution levels but also to forecast potential pollution spikes, providing clear, actionable insights for communities and researchers."
+  utter_how_to_use_map:
+  - text: "Our interactive dashboard provides a map-based view of environmental data. You can zoom, click on data points, and switch between data layers like pollution levels and weather."
+  utter_health_correlation_details:
+  - text: "Our Health Correlation feature allows the community to log symptoms, which our system can then analyze alongside air quality data to understand the real-world health impact of pollution."
+  utter_get_live_data_info:
+  - text: "Our website's interactive dashboard provides live, real-time pollution data. It displays the current AQI and levels for key pollutants for various locations."
+  utter_what_is_aqi:
+  - text: "AQI stands for Air Quality Index. It's a scale from 0 to 500 used to communicate how polluted the air currently is. A higher value means greater pollution."
+  utter_causes_of_pollution:
+  - text: "Air pollution comes from various sources, including emissions from vehicles, industrial processes, burning of fossil fuels, and natural events like wildfires."
+  utter_how_to_reduce_pollution:
+  - text: "You can help reduce air pollution by using public transportation, conserving energy at home, reducing waste, and supporting policies that promote clean energy."
+  utter_health_effects:
+  - text: "Long-term exposure to air pollution can cause chronic respiratory diseases, heart disease, and lung cancer. Short-term exposure can cause irritation to the eyes, nose, and throat."
+
+actions:
+  - action_explain_pollutant
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

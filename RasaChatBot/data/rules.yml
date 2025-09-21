@@ -1,0 +1,86 @@
+version: "3.1"
+rules:
+- rule: Respond to pollutant questions
+  steps:
+  - intent: ask_pollutant_info
+  - action: action_explain_pollutant
+
+- rule: Greet the user
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Say goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Handle thanks
+  steps:
+  - intent: thanks
+  - action: utter_thanks
+
+- rule: Explain how to get started
+  steps:
+  - intent: get_started
+  - action: utter_get_started
+
+- rule: Explain pricing
+  steps:
+  - intent: pricing_and_cost
+  - action: utter_pricing_and_cost
+
+- rule: Explain enterprise solutions
+  steps:
+  - intent: enterprise_solutions
+  - action: utter_enterprise_solutions
+
+- rule: Explain API access
+  steps:
+  - intent: api_access
+  - action: utter_api_access
+
+- rule: Talk about the team
+  steps:
+  - intent: about_team
+  - action: utter_about_team
+
+- rule: Explain the project
+  steps:
+  - intent: about_project
+  - action: utter_about_project
+
+- rule: Explain how to use the map
+  steps:
+  - intent: how_to_use_map
+  - action: utter_how_to_use_map
+
+- rule: Explain health correlation
+  steps:
+  - intent: health_correlation_details
+  - action: utter_health_correlation_details
+
+- rule: Explain where to get live data
+  steps:
+  - intent: get_live_data_info
+  - action: utter_get_live_data_info
+
+- rule: Explain AQI
+  steps:
+  - intent: what_is_aqi
+  - action: utter_what_is_aqi
+
+- rule: Explain causes of pollution
+  steps:
+  - intent: causes_of_pollution
+  - action: utter_causes_of_pollution
+
+- rule: Explain how to reduce pollution
+  steps:
+  - intent: how_to_reduce_pollution
+  - action: utter_how_to_reduce_pollution
+
+- rule: Explain health effects
+  steps:
+  - intent: health_effects
+  - action: utter_health_effects
